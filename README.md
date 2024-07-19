@@ -1,38 +1,63 @@
-# seed-application
+# Vite React Project
 
-Create a bare-bones application that I can modify and build on.
+This is a bare-bones web application built with Vite and React. It provides a simple structure that you can modify and build upon.
 
-## Collaborate with GPT Engineer
+## Prerequisites
 
-This is a [gptengineer.app](https://gptengineer.app)-synced repository 🌟🤖
+Before you begin, ensure you have met the following requirements:
 
-Changes made via gptengineer.app will be committed to this repo.
+* You have installed the latest version of [Node.js and npm](https://nodejs.org/en/download/)
 
-If you clone this repo and push changes, you will have them reflected in the GPT Engineer UI.
+## Installing and Running the Project
 
-## Tech stack
+To install and run this project, follow these steps:
 
-This project is built with .
+1. Clone the repository:
+   ```
+   git clone <repository-url>
+   ```
 
-- Vite
-- React
-- shadcn-ui
-- Tailwind CSS
+2. Navigate to the project directory:
+   ```
+   cd vite-project
+   ```
 
-## Setup
+3. Install the dependencies:
+   ```
+   npm install
+   ```
 
-```sh
-git clone https://github.com/GPT-Engineer-App/seed-application.git
-cd seed-application
-npm i
+4. Start the development server:
+   ```
+   npm run dev
+   ```
+
+The application should now be running on `http://localhost:5173` (or another port if 5173 is already in use).
+
+## Building for Production
+
+To build the app for production, run:
+
+```
+npm run build
 ```
 
-```sh
-npm run dev
-```
+This will create a `dist` folder with all the built files.
 
-This will run a dev server with auto reloading and an instant preview.
+## Additional Commands
 
-## Requirements
+- `npm run lint`: Run ESLint to check for code quality and style issues
+- `npm run preview`: Preview the production build locally
 
-- Node.js & npm - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Modifying the Project
+
+This is a bare-bones application designed to be easily modified. Feel free to add new components, styles, or functionality as needed. The main entry point of the application is `src/main.jsx`, and the main component is in `src/App.jsx`.
+
+## Learn More
+
+To learn more about the technologies used in this project, check out the following resources:
+
+- [Vite Documentation](https://vitejs.dev/)
+- [React Documentation](https://reactjs.org/)
+
+Happy coding!
