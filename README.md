@@ -1,38 +1,68 @@
-# seed-application
+# Vite React Project
 
-Create a bare-bones application that I can modify and build on.
+This is a bare-bones React application created with Vite.
 
-## Collaborate with GPT Engineer
+## Prerequisites
 
-This is a [gptengineer.app](https://gptengineer.app)-synced repository 🌟🤖
+- Node.js (version 14 or later)
+- npm (usually comes with Node.js)
 
-Changes made via gptengineer.app will be committed to this repo.
+## Installation
 
-If you clone this repo and push changes, you will have them reflected in the GPT Engineer UI.
+1. Clone the repository:
+   ```
+   git clone [repository-url]
+   cd [project-directory]
+   ```
 
-## Tech stack
+2. Install dependencies:
+   ```
+   npm ci
+   ```
 
-This project is built with .
+## Running the Application
 
-- Vite
-- React
-- shadcn-ui
-- Tailwind CSS
+To start the development server:
 
-## Setup
-
-```sh
-git clone https://github.com/GPT-Engineer-App/seed-application.git
-cd seed-application
-npm i
 ```
-
-```sh
 npm run dev
 ```
 
-This will run a dev server with auto reloading and an instant preview.
+The application will be available at `http://localhost:5173` (or another port if 5173 is in use).
 
-## Requirements
+## Building for Production
 
-- Node.js & npm - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+To create a production build:
+
+```
+npm run build
+```
+
+The built files will be in the `dist` directory.
+
+## Additional Commands
+
+- Lint the code:
+  ```
+  npm run lint
+  ```
+
+- Preview the production build:
+  ```
+  npm run preview
+  ```
+
+## Project Structure
+
+- `src/`: Source files
+  - `main.jsx`: Entry point of the application
+  - `App.jsx`: Main application component
+- `public/`: Static assets
+- `index.html`: HTML template
+
+## Technologies Used
+
+- React
+- Vite
+- ESLint
+- Tailwind CSS
