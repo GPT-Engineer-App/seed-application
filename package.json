@@ -4,9 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "npx vite",
-    "build": "npx vite build",
-    "build:dev": "npx vite build --mode development",
+    "dev": "npm install && npx vite",
+    "build": "npm install && npx vite build",
+    "build:dev": "npm install && npx vite build --mode development",
     "lint": "npx eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "npx vite preview"
   },
