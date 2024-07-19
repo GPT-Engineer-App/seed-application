@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm install && vite build",
-    "build:dev": "npm install && vite build --mode development",
+    "build": "npm cache clean --force && npm install --verbose && vite build",
+    "build:dev": "npm cache clean --force && npm install --verbose && vite build --mode development",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
