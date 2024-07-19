@@ -15,12 +15,7 @@ This is a bare-bones web application built with Vite and React.
    cd <project-directory>
    ```
 
-2. Clear npm cache (if needed):
-   ```
-   npm cache clean --force
-   ```
-
-3. Install dependencies:
+2. Install dependencies:
    ```
    npm install
    ```
@@ -49,22 +44,17 @@ The built files will be in the `dist` directory.
 
 If you encounter any issues during installation or running the application:
 
-1. Clear the npm cache:
-   ```
-   npm cache clean --force
-   ```
-
-2. Delete the `node_modules` directory and `package-lock.json` file:
+1. Delete the `node_modules` directory and `package-lock.json` file:
    ```
    rm -rf node_modules package-lock.json
    ```
 
-3. Reinstall dependencies:
+2. Reinstall dependencies:
    ```
    npm install
    ```
 
-4. If the issue persists, try running the install command with verbose output:
+3. If the issue persists, try running the install command with verbose output:
    ```
    npm install --verbose
    ```
