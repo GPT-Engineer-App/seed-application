@@ -1,38 +1,76 @@
-# seed-application
+# Vite Project
 
-Create a bare-bones application that I can modify and build on.
+This is a bare-bones web application built with Vite and React.
 
-## Collaborate with GPT Engineer
+## Prerequisites
 
-This is a [gptengineer.app](https://gptengineer.app)-synced repository 🌟🤖
+- Node.js (version 14 or later)
+- npm (usually comes with Node.js)
 
-Changes made via gptengineer.app will be committed to this repo.
+## Installation
 
-If you clone this repo and push changes, you will have them reflected in the GPT Engineer UI.
+1. Clone the repository:
+   ```
+   git clone <repository-url>
+   cd <project-directory>
+   ```
 
-## Tech stack
+2. Clear npm cache (if needed):
+   ```
+   npm cache clean --force
+   ```
 
-This project is built with .
+3. Install dependencies:
+   ```
+   npm install
+   ```
 
-- Vite
-- React
-- shadcn-ui
-- Tailwind CSS
+## Running the Application
 
-## Setup
+To start the development server:
 
-```sh
-git clone https://github.com/GPT-Engineer-App/seed-application.git
-cd seed-application
-npm i
 ```
-
-```sh
 npm run dev
 ```
 
-This will run a dev server with auto reloading and an instant preview.
+The application will be available at `http://localhost:5173` (or another port if 5173 is in use).
 
-## Requirements
+## Building for Production
 
-- Node.js & npm - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+To create a production build:
+
+```
+npm run build
+```
+
+The built files will be in the `dist` directory.
+
+## Troubleshooting
+
+If you encounter any issues during installation or running the application:
+
+1. Clear the npm cache:
+   ```
+   npm cache clean --force
+   ```
+
+2. Delete the `node_modules` directory and `package-lock.json` file:
+   ```
+   rm -rf node_modules package-lock.json
+   ```
+
+3. Reinstall dependencies:
+   ```
+   npm install
+   ```
+
+4. If the issue persists, try running the install command with verbose output:
+   ```
+   npm install --verbose
+   ```
+
+   This will provide more detailed information about the installation process, which can help identify any specific problems.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
