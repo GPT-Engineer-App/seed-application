@@ -1,38 +1,81 @@
-# seed-application
+# Bare-Bones Web Application
 
-Create a bare-bones application that I can modify and build on.
+This is a minimal web application with a simple structure that you can modify and build upon.
 
-## Collaborate with GPT Engineer
+## Getting Started
 
-This is a [gptengineer.app](https://gptengineer.app)-synced repository 🌟🤖
+### Prerequisites
 
-Changes made via gptengineer.app will be committed to this repo.
+- Node.js (version 14 or later recommended)
+- npm (comes with Node.js) or yarn
 
-If you clone this repo and push changes, you will have them reflected in the GPT Engineer UI.
+### Installation
 
-## Tech stack
+1. Clone the repository:
+   ```
+   git clone [repository-url]
+   cd [repository-name]
+   ```
 
-This project is built with .
+2. Install dependencies:
+   ```
+   npm install
+   ```
+   or if you're using yarn:
+   ```
+   yarn install
+   ```
 
-- Vite
-- React
-- shadcn-ui
-- Tailwind CSS
+### Running the Application
 
-## Setup
+To start the development server:
 
-```sh
-git clone https://github.com/GPT-Engineer-App/seed-application.git
-cd seed-application
-npm i
 ```
-
-```sh
 npm run dev
 ```
+or with yarn:
+```
+yarn dev
+```
 
-This will run a dev server with auto reloading and an instant preview.
+The application should now be running on `http://localhost:5173` (or another port if 5173 is already in use).
 
-## Requirements
+### Building for Production
 
-- Node.js & npm - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+To create a production build:
+
+```
+npm run build
+```
+or with yarn:
+```
+yarn build
+```
+
+The built files will be in the `dist` directory.
+
+## Project Structure
+
+- `src/`: Source files
+  - `components/`: React components
+  - `pages/`: Page components
+  - `App.jsx`: Main application component
+  - `main.jsx`: Entry point
+- `public/`: Static assets
+- `index.html`: HTML template
+- `vite.config.js`: Vite configuration
+- `package.json`: Project dependencies and scripts
+
+## Modifying the Application
+
+Feel free to modify any part of this application to suit your needs. The bare-bones structure is designed to be a starting point for your own projects.
+
+## Learn More
+
+To learn more about the technologies used in this project:
+
+- [React Documentation](https://reactjs.org/docs/getting-started.html)
+- [Vite Documentation](https://vitejs.dev/guide/)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+
+Happy coding!
