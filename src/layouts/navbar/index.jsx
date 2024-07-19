@@ -1,24 +1,26 @@
-import { navItems } from "@/nav-items";
-import { Outlet } from "react-router-dom";
-import { DesktopNavbar } from "./_components/DesktopNavbar";
-import { MobileSheet } from "./_components/MobileSheet";
-import { UserMenu } from "./_components/UserMenu";
+import { Link, Outlet } from "react-router-dom";
+import { navItems } from "../../nav-items";
 
 const Layout = () => {
   return (
-    <div className="flex min-h-screen w-full flex-col">
-      <header className="sticky top-0 flex h-16 items-center gap-4 border-b bg-background px-4 md:px-6">
-        <DesktopNavbar navItems={navItems} />
-        <div className="flex flex-1 items-center justify-between space-x-2 md:justify-end">
-          <MobileSheet navItems={navItems} />
-          <UserMenu />
-        </div>
+    <div className="flex flex-col min-h-screen">
+      <header className="bg-gray-800 text-white p-4">
+        <nav className="container mx-auto flex justify-between items-center">
+          <Link to="/" className="text-xl font-bold">My App</Link>
+          <ul className="flex space-x-4">
+            {navItems.map((item) => (
+              <li key={item.to}>
+                <Link to={item.to} className="hover:text-gray-300">{item.title}</Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
       </header>
-      <main className="flex-1 p-4 md:p-6">
+      <main className="flex-grow container mx-auto p-4">
         <Outlet />
       </main>
-      <footer className="border-t py-4 text-center text-sm text-muted-foreground">
-        © 2024 Your App Name. All rights reserved.
+      <footer className="bg-gray-800 text-white p-4 text-center">
+        <p>&copy; 2024 My App. All rights reserved.</p>
       </footer>
     </div>
   );
